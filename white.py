@@ -1,0 +1,46 @@
+import os 
+os.system("cls")
+
+soma = 0
+QUANTIDADE_NOTAS = 3
+media=soma/QUANTIDADE_NOTAS
+for i in range(QUANTIDADE_NOTAS):
+ while True:
+   nota = float(input(f"DIGITE SUA NOTA: "))
+   if nota >= 0 and nota <= 10:
+        soma +=nota
+        break
+   else:
+       print("nota invalida")
+       print("tente novamente")
+       
+media = soma / QUANTIDADE_NOTAS
+if media >= 7:
+       print("APROVADO,media{media}")
+elif media >= 5 or media <=6.9:
+       print("recuperaçao,media{media}")
+    
+else:
+        print(f"reprovado,media{media}")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+print("acesso negado")
+print(f"nota{nota}")
+        
+media = soma / QUANTIDADE_NOTAS
+print(f"media{media}")
+print("acesso permitido")   
+    
+print("FIM!")
